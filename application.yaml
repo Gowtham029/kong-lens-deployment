@@ -4,7 +4,7 @@ metadata:
   name: kong-lens-app-argo-application
   namespace: argocd
 spec:
-  project: default
+  project: kong-lens-app
 
   source:
     repoURL: https://github.com/Gowtham029/kong-lens-deployment.git
