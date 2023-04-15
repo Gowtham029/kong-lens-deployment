@@ -15,17 +15,17 @@ spec:
         app: kong-lens-app
     spec:
       imagePullSecrets:
-          - name: dockerhub-creds
+        - name: dockerhub-creds
       containers:
-      - image: gowthamrajselvam/kong-lens:0.1.0
-        name: kong-lens-app
-        imagePullPolicy: Always
-        resources:
+        - image: gowthamrajselvam/kong-lens:4
+          name: kong-lens-app
+          imagePullPolicy: Always
+          resources:
             requests:
               cpu: 100m
               memory: 256Mi
             limits:
               cpu: 200m
               memory: 512Mi
-        ports:
-          - containerPort: 80
+          ports:
+            - containerPort: 80
