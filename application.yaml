@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/gboie/argocd-kong-lens-app-config.git
+    repoURL: https://github.com/Gowtham029/kong-lens-deployment.git
     targetRevision: HEAD
-    path: kong-lens-app
+    path: apps/kong-lens
   destination: 
     server: https://kubernetes.default.svc
     namespace: kong-lens-app
