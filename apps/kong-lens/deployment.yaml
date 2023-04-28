@@ -17,7 +17,7 @@ spec:
       imagePullSecrets:
         - name: dockerhub-creds
       containers:
-        - image: gowthamrajselvam/kong-lens:13
+        - image: gowthamrajselvam/kong-lens:22
           name: kong-lens-app
           imagePullPolicy: Always
           resources:
